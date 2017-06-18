@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/haris.png" type="image/png">
+		<title>Adhar Haris - Creative Developer</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"> 	
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/haris.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="top"> 
+			<header>
+				<div class="headerimg">
+					<img src="images/logogold.png" alt="code and design" width="10%" height="auto">	
+				</div>			
+			</header>
+
+			<nav class="main-nav">								
+				<ul>
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="about.html"> ABOUT </a></li> 
+					<li><a href="portfolio.html"> PORTFOLIO </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="portSectionWrapper">
+			
+			<div class="portSection"> 
+				<h2>Client</h2>
+				<img src="images/goldsilverline.png" width="100%" height="auto">
+				<p>PT. Bank CIMB Niaga Tbk</p>
+					
+			</div>
+
+			<div class="portSection">
+				<h2>My role</h2>
+				<img src="images/goldsilverline.png" width="100%" height="auto">
+				<p>Front-end developer, deployment</p>
+					
+			</div>
+
+			<div class="portSection"> 
+				<h2>Desc</h2>
+				<img src="images/goldsilverline.png" width="100%" height="auto">
+				<p>An internal iOS (iPad) app for all digital bank managers of CIMB Niaga to serve their customer in a better and easier way</p>
+					
+			</div>
+
+			<div class="portSection">
+				<h2>Created</h2>
+				<img src="images/goldsilverline.png" width="100%" height="auto">
+				<p>2013</p>
+					
+			</div>
+		</div>	
+			
+
+		<div class="porthead">
+			<img src="images/cimb.png" width="70%" height="auto">
+
+		</div>
+
+		<div class="portpage">
+			
+						
+				<div class="portImageContainer">
+					<img src="images/cimb1.png" width="100%" height="auto">
+				</div>
+
+				<div class="portImageContainer">
+					<img src="images/cimb2.png" width="100%" height="auto">
+				</div>
+
+				<div class="portImageContainer">
+					<img src="images/cimb3.png" width="100%" height="auto">
+				</div>
+
+				<div class="portImageContainer">
+					<img src="images/cimb4.png" width="100%" height="auto">
+				</div>
+
+				<div class="portImageContainer">
+					<img src="images/cimb6.png" width="100%" height="auto">
+				</div>
+
+				<div class="portImageContainer">
+					<img src="images/cimb5.png" width="100%" height="auto">
+				</div>
+
+		</div>
+
+		<!-- sticky menu -->
+		<script type="text/javascript">
+			
+			var mn = $(".main-nav");
+			var	mns = "main-nav-scrolled";
+			var	hdr = $('header').height();
+
+			$(window).scroll(function(){
+				if($(this).scrollTop() > hdr) {
+					mn.addClass(mns);
+					} 
+					else{ 
+							mn.removeClass(mns);
+							}
+					});
+
+		</script>
+
+	</body>
+
+</html>

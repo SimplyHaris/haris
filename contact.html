@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			
+		<meta charset="utf-8">
+		<link rel="icon" href="images/haris.png" type="image/png">
+		<title>Adhar Haris - Creative Developer</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"> 	
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/haris.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="top"> 
+			<header>
+				<div class="headerimg">
+					<img src="images/logogold.png" alt="code and design" width="10%" height="auto">	
+				</div>			
+			</header>
+
+			<nav class="main-nav">								
+				<ul>
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="about.html"> ABOUT </a></li> 
+					<li><a href="portfolio.html"> PORTFOLIO </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact" id="contact">
+			<!-- <img src="images/logogold.png" width="10%" height="auto"> -->
+			<h1>LET'S GET IN TOUCH.</h1>
+			<img src="images/goldstrip.png" width="4%" height="auto">
+			<h2>MUHAMMAD ADHAR HARIS</h2>
+			<p>muhammad.adhar.haris@gmail.com</p>
+			<p><b>+62 813 8013 0049</b></p>
+
+			<p>Connect with me</p>
+				
+				<ul>
+					<li><a href="https://www.facebook.com/muhammad.a.haris.5"> <img src="images/facebook.png"></a></li>
+					<li><a href="https://twitter.com/AdharHaris"> <img src="images/twitter.png"></a></li>
+					<li><a href="https://www.linkedin.com/in/muhammad-adhar-haris-6bb21a134/"> <img src="images/linkedin.png"></a></li>
+				</ul>
+
+
+			<p>&#169; 2017 Muhammad Adhar Haris</p>
+
+		</div>
+
+			
+
+		<!-- sticky menu -->
+		<script type="text/javascript">
+			
+			var mn = $(".main-nav");
+			var	mns = "main-nav-scrolled";
+			var	hdr = $('header').height();
+
+			$(window).scroll(function(){
+				if($(this).scrollTop() > hdr) {
+					mn.addClass(mns);
+					} 
+					else{ 
+							mn.removeClass(mns);
+							}
+					});
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/haris.png" type="image/png">
+		<title>Adhar Haris - Creative Developer</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"> 	
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/haris.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="top"> 
+			<header>
+				<div class="headerimg">
+					<img src="images/logogold.png" alt="code and design">	
+				</div>			
+			</header>
+
+			<nav class="main-nav">								
+				<ul>
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="about.html"> ABOUT </a></li> 
+					<li><a href="portfolio.html"> PORTFOLIO </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="hello">
+				<h1>MUHAMMAD ADHAR HARIS</h1>
+				<h2>DESIGNER + DEVELOPER</h2>
+				<img src="images/whitestrip.png" width="4%" height="auto">
+				<p>Open for web and mobile apps development works.</p>
+			</div>
+
+		</div>
+			
+
+<!-- sticky menu -->
+		<script type="text/javascript">
+			
+			var mn = $(".main-nav");
+			var	mns = "main-nav-scrolled";
+			var	hdr = $('header').height();
+
+			$(window).scroll(function(){
+				if($(this).scrollTop() > hdr) {
+					mn.addClass(mns);
+					} 
+					else{ 
+							mn.removeClass(mns);
+							}
+					});
+
+		</script>
+
+	</body>
+
+</html>

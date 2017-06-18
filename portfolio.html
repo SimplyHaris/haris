@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/haris.png" type="image/png">
+		<title>Adhar Haris - Creative Developer</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"> 	
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/haris.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="top"> 
+			<header>
+				<div class="headerimg">
+					<img src="images/logogold.png" alt="code and design" width="10%" height="auto">	
+				</div>			
+			</header>
+
+			<nav class="main-nav">								
+				<ul>
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="about.html"> ABOUT </a></li> 
+					<li><a href="portfolio.html"> PORTFOLIO </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="portfolio" id="portfolio">
+			
+				<div class="imageContainer">
+					<a href="portfolio1.html"><img src="images/cimb.png" width="100%" height="auto"></a>
+
+					<!-- <div class="middle">
+						<h1>CIMB Niaga Digital Lounge App</h2>
+						<img src="images/logogold.png" alt="code and design" width="20%" height="auto">	
+						<h2>iPad app</h2>
+						<p>an iPad app for digital bank managers (dbm) of PT. Bank CIMB Niaga Tbk. </p>
+					</div> -->
+				</div>
+				
+				<div class="imageContainer">
+					<a href="portfolio2.html"><img src="images/esportindo.png" width="100%" height="auto"></a>
+				</div>
+
+				<div class="imageContainer">
+					<a href="portfolio3.html"><img src="images/tombakintan.png" width="100%" height="auto"></a>
+				</div>
+
+				<div class="imageContainer">
+					<a href="portfolio4.html"><img src="images/mg.png" width="100%" height="auto"></a>
+				</div>
+
+			
+			
+		</div>
+
+		<!-- sticky menu -->
+		<script type="text/javascript">
+			
+			var mn = $(".main-nav");
+			var	mns = "main-nav-scrolled";
+			var	hdr = $('header').height();
+
+			$(window).scroll(function(){
+				if($(this).scrollTop() > hdr) {
+					mn.addClass(mns);
+					} 
+					else{ 
+							mn.removeClass(mns);
+							}
+					});
+
+		</script>
+
+	</body>
+
+</html>
